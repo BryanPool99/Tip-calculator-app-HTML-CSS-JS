@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(185, 41%, 84%);
+}
+.container {
+  width: 100vw;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+  color: hsl(184, 14%, 56%);
+}
+.logo {
+ 
+  margin: 2rem;
+}
+.content {
+
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 26rem;
+}
+.box1 {
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.bill {
+  
+  display: flex;
+  flex-direction: column;
+}
+.input {
+ 
+  width: 100%;
+  height: 2.5rem;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.inputMoney {
+  float: right;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  font-family: "Space Mono", monospace;
+  outline-style: none;
+  font-size: large;
+  text-align: right;
+}
+.numPorce {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  margin: 1.8rem 0;
+}
+.percen {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.percen.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.Opercen {
+ 
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.custom {
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 4rem;
+  font-family: "Space Mono", monospace;
+  outline-style: none;
+  font-size: large;
+  text-align: right;
+  font-size: 2rem;
+  color: hsl(183, 100%, 15%);
+}
+.custom::placeholder {
+  font-family: "Space Mono", monospace;
+  outline-style: none;
+  text-align: center;
+  font-size: 2rem;
+}
+.people {
+ 
+  display: flex;
+  flex-direction: column;
+}
+.people>h3::after{
+
+  content: "Can't be zero";
+  margin-left: 2rem;
+  color: #bb0202;
+  opacity: 0;
+}
+.people>h3::after.active{
+  opacity: 1;
+}
+.numPeople {
+
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  font-size: 2rem;
+}
+#numP {
+  border: none;
+  outline-style: none;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.5rem;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  color: hsl(183, 100%, 15%);
+  font-size: 1rem;
+}
+#numP::placeholder {
+  font-family: "Space Mono", monospace;
+  outline-style: none;
+  text-align: right;
+  font-size: 1rem;
+}
+.box2 {
+
+  border-radius: 1rem;
+  width: 22rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(183, 100%, 15%);
+}
+.answerTip {
+
+  width: 95%;
+  margin: 1rem;
+}
+.tipAmount,
+.tipTotal {
+
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  margin: 0.5rem;
+  align-items: center;
+}
+.tittle {
+  display: flex;
+  flex-direction: column;
+}
+.tittle > p {
+  color: hsl(184, 14%, 56%);
+}
+.number {
+  font-size: 2rem;
+  color: hsl(172, 67%, 45%);
+}
+.btnReset {
+
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  border-radius: 1rem;
+  
+}
+.btnReset>button{
+  width: 100%;
+  border-radius: 1rem;
+  font-family: "Space Mono", monospace;
+  outline-style: none;
+  height: 3rem;
+  font-size: 2rem;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+  opacity: 0.34;
+  cursor: pointer;
+}
+
+.btn.active{
+  opacity: 1;
+  background-color: hsl(185, 41%, 84%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 768px){
+  .logo{
+    position: relative;
+    top: 4rem;
+  }
+  .content{
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 95vw;
+    border-radius: 2rem;
+    position: relative;
+    top: 6rem;
+  }
+  .box2{
+    justify-content: space-around;
+  }
+  .tipAmount,.tipTotal{
+    margin: 1rem;
+  }
+  .attribution{
+    position: relative;
+    top: 8rem;
+  }
+}
+@media only screen and (min-width: 1380px) {
+  .content{
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 80vw;
+    border-radius: 2rem;
+  }
+  .box1{
+    padding: 2rem;
+    width: 55%;
+  }
+  .box2{
+    width: 45%;
+    justify-content: space-around;
+    margin: 3rem;
+  }
+  .numPorce{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .tipAmount,.tipTotal{
+    margin: 2rem;
+  }
+}

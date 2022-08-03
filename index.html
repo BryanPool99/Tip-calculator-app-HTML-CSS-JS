@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ <link rel="stylesheet" href="/css/estilos.css">
+ <title>Frontend Mentor | Tip calculator app</title>
+ <script src="app.js" type="module"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="content">
+      <div class="box1">
+        <div class="bill">
+          <h1>Bill</h1>
+          <div class="input">
+            <p>$</p>
+             <input type="text" class="inputMoney" placeholder="0">
+          </div>
+        </div>
+        <div class="tip">
+          <h3>Select Tip %</h3>
+          <div class="numPorce">
+            <div class="percen">5%</div>
+            <div class="percen">10%</div>
+            <div class="percen">15%</div>
+            <div class="percen">25%</div>
+            <div class="percen">50%</div>
+            <div class="Opercen">
+              <input type="text" class="custom" placeholder="Custom">
+            </div>
+          </div>
+        </div>
+        <div class="people">
+          <h3>Number of People</h3>
+          <div class="numPeople">
+            <img src="images/icon-person.svg" alt="icon-person">
+            <input type="text" name="numP" id="numP" min="0" placeholder="0">
+          </div>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="answerTip">
+          <div class="tipAmount">
+            <div class="tittle">
+              <h3>Tip Amount</h3> 
+              <p>/ person</p> 
+            </div>
+            <div class="number" id="tipA">
+              $ 0.00
+            </div>
+          </div>
+          <div class="tipTotal">
+            <div class="tittle">
+              <h3>Total</h3> 
+              <p>/ person</p> 
+            </div>
+            <div class="number" id="tipT">
+              $ 0.00
+            </div>
+          </div>
+        </div>
+        <div class="btnReset">
+          <button class="btn">RESET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div role="complementary" class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bryan Arredondo</a>.
+  </div>
+</body>
+</html>
