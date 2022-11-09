@@ -1,3 +1,5 @@
+#Preview Site:
+https://jocular-semifreddo-f969e0.netlify.app/
 # Frontend Mentor - Tip calculator app
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
